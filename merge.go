@@ -58,6 +58,12 @@ func Merge(template string, imgs []image.Image) (image.Image, error) {
 
 	b := image.Rect(0, 0, width, height)
 	resImage := image.NewRGBA(b)
+	// Quick memory leak fix
+        emptyRect := image.Rect(0, 0, 0, 0)
+	emptyImage := image.NewRGBA(emptyRect)
+	defer func() {
+		resImage = emptyImage
+	}	
 	// T drawing
 	draw.Draw(resImage, b, first, image.ZP, draw.Src)
 
