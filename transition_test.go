@@ -4,7 +4,7 @@ import (
 	"testing"
 	"github.com/noelyahan/impexp"
 	"image"
-	"github.com/noelyahan/mergitrans"
+	"github.com/dmitridb/mergitrans"
 )
 
 func _getImages() (img1 image.Image, img2 image.Image) {

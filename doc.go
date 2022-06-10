@@ -13,4 +13,4 @@ Mergi library supports
 	Export
 
 */
-package mergi // import "github.com/noelyahan/mergi"
+package mergi // import "github.com/dmitridb/mergi"

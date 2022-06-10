@@ -12,7 +12,7 @@ import (
 //
 // this type can be exported via mergi.Export function
 //
-// for more animate examples https://github.com/noelyahan/mergi/examples/animate
+// for more animate examples https://github.com/dmitridb/mergi/examples/animate
 func Animate(imgs []image.Image, delay int) (gif.GIF, error) {
 	for i, v := range imgs {
 		if v == nil {

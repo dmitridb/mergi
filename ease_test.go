@@ -4,7 +4,7 @@ import (
 	"testing"
 	"image"
 	"github.com/noelyahan/impexp"
-	"github.com/noelyahan/mergi"
+	"github.com/dmitridb/mergi"
 )
 
 func TestEase(t *testing.T) {

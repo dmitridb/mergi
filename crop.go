@@ -13,7 +13,7 @@ var errCropBound = errors.New("Mergi expects more than 0 value for bounds")
 // Crop uses go standard image.Image, the starting X, Y position as go standard image.Point crop width and height as image.Point
 // returns the crop image output
 //
-// for more crop examples https://github.com/noelyahan/mergi/examples/crop
+// for more crop examples https://github.com/dmitridb/mergi/examples/crop
 func Crop(img image.Image, p1 image.Point, p2 image.Point) (image.Image, error) {
 	if img == nil {
 		return nil, errCrop

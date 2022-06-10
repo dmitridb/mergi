@@ -1,7 +1,7 @@
 package mergi_test
 
 import (
-	"github.com/noelyahan/mergi"
+	"github.com/dmitridb/mergi"
 	"github.com/noelyahan/impexp"
 	"image"
 	"strings"

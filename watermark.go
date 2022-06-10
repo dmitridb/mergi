@@ -11,7 +11,7 @@ import (
 //
 // the position of the watermark has to provide in image.Point then it'll returns the watermarked image output
 //
-// for more watermark examples https://github.com/noelyahan/mergi/examples/watermark
+// for more watermark examples https://github.com/dmitridb/mergi/examples/watermark
 func Watermark(watermark, original image.Image, p image.Point) (image.Image, error) {
 	if watermark == nil {
 		msg := "Mergi found a error watermark image"
@@ -33,7 +33,7 @@ func Watermark(watermark, original image.Image, p image.Point) (image.Image, err
 //
 // the floating point alpha amount has to provide with the given image and it'll return the opacity image
 //
-// for more opacity examples https://github.com/noelyahan/mergi/examples/opacity
+// for more opacity examples https://github.com/dmitridb/mergi/examples/opacity
 func Opacity(img image.Image, alpha float64) (image.Image, error) {
 	mapValues := func(value, start1, stop1, start2, stop2 float64) int {
 		return int(start2 + (stop2-start2)*((value-start1)/(stop1-start1)))

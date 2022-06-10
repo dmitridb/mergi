@@ -19,7 +19,7 @@ const (
 //
 // ex: "TB" - top, bottom - vertical merge (2 images)
 //
-// for more merge techniques https://github.com/noelyahan/mergi/examples/merge
+// for more merge techniques https://github.com/dmitridb/mergi/examples/merge
 func Merge(template string, imgs []image.Image) (image.Image, error) {
 	// return a nil
 	tokens := strings.Split(template, "")

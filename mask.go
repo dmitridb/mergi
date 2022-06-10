@@ -15,7 +15,7 @@ var MaskWhite = color.RGBA{255, 255, 255, 0}
 //
 // Mask simply match the given color and matched with mask image and original to replace alpha values 0, 255
 //
-// for more mask examples https://github.com/noelyahan/mergi/examples/mask
+// for more mask examples https://github.com/dmitridb/mergi/examples/mask
 func Mask(maskImg, original image.Image, maskColor color.RGBA) (image.Image, error) {
 	bounds := original.Bounds()
 	maskB := image.NewAlpha(bounds)

@@ -17,7 +17,7 @@ type Exporter interface {
 // Import uses to import image.Image from different sources
 // Multiple io implementation can be find in io pkg
 //
-// for more Import usages https://github.com/noelyahan/mergi/examples
+// for more Import usages https://github.com/dmitridb/mergi/examples
 func Import(importer Importer) (image.Image, error) {
 	return importer.Import()
 }
@@ -25,7 +25,7 @@ func Import(importer Importer) (image.Image, error) {
 // Export uses to export output do different sources
 // Multiple exporter implementation can be find in io pkg
 //
-// for more Import usages https://github.com/noelyahan/mergi/examples
+// for more Import usages https://github.com/dmitridb/mergi/examples
 func Export(exporter Exporter) error {
 	return exporter.Export()
 }
