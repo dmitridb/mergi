@@ -63,7 +63,7 @@ func Merge(template string, imgs []image.Image) (image.Image, error) {
 	emptyImage := image.NewRGBA(emptyRect)
 	defer func() {
 		resImage = emptyImage
-	}	
+	}()
 	// T drawing
 	draw.Draw(resImage, b, first, image.ZP, draw.Src)
 
